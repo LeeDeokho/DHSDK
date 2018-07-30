@@ -3,6 +3,9 @@ osx_image: xcode9.3
 xcode_project: DHSDK.xcodeproj
 xcode_scheme: DHSDKTests
 xcode_sdk: iphonesimulator11.3
+
+script: xcodebuild clean build -sdk iphonesimulator -workspace DHSDK.xcodeproj -scheme DHSDKTests CODE_SIGNING_REQUIRED=NO
+
 env:
   global:
   - FRAMEWORK_NAME=DHSDK
