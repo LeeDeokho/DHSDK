@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode9.3
 xcode_project: DHSDK.xcodeproj
-#xcode_scheme: DHSDKTests
+xcode_scheme: DHSDKTests
 xcode_sdk: iphonesimulator11.3
 
 script: xcodebuild clean build -sdk iphonesimulator -project DHSDK.xcodeproj -scheme DHSDKTests CODE_SIGNING_REQUIRED=NO
